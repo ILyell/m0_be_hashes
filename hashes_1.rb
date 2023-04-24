@@ -1,5 +1,5 @@
 
-Activity:
+#Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
@@ -7,23 +7,24 @@ Activity:
 # `ruby hashes_1.rb`
 
 foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+# p zoo
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+p foods.keys
 
 # Write code that prints all of the 'values' of the foods variable 
-# you created above:
-# YOUR CODE HERE
+# you created above
+p foods.values
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
-# YOUR CODE HERE
+p foods[:grapes]
 
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
-# YOUR CODE HERE
+foods[:oranges] = 30
+p foods
 
 
 #-------------------
@@ -37,16 +38,24 @@ p zoo
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
-# Write code that prints your email hash to the terminal.
+email = {
+  sender: "bigbank.com",
+  subject: "Home Loan",
+  receiver: "Ian Lyell",
+  body: "You got a home loan",
+  attachments: "loan.pdf",
+}
 
+# Write code that prints your email hash to the terminal.
+p email
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email.values
 
 
 #-------------------
@@ -59,7 +68,7 @@ p zoo
 # Check out the following example of an array of Instagram posts:
 
 
-posts = ["image at beach", "holiday party", "adorable puppy", "video of cute baby"]
+#posts = ["image at beach", "holiday party", "adorable puppy", "video of cute baby"]
 
 
 # An Array of Hashes is probably more realistic. Hashes are a data type that's great
@@ -67,25 +76,25 @@ posts = ["image at beach", "holiday party", "adorable puppy", "video of cute bab
 # that relate to each individual Instagram post:
 
 
-posts = [
-  {
-    image_src: "./images/beach.png",
-    caption: "At the beach with my besties",
-    timestamp: "4:37 PM August 13, 2019",
-    number_likes: 0,
-    comments: []
-  }, 
-  {
-    image_src: "./images/holiday-party.png",
-    caption: "What a great holiday party omg",
-    timestamp: "11:37 PM December 31, 2019",
-    number_likes: 13,
-    comments: []
-  }
-]
-
-p posts
-p posts[0]
+#posts = [
+#  {
+#    image_src: "./images/beach.png",
+#    caption: "At the beach with my besties",
+#    timestamp: "4:37 PM August 13, 2019",
+#    number_likes: 0,
+#    comments: []
+#  }, 
+#  {
+#    image_src: "./images/holiday-party.png",
+#    caption: "What a great holiday party omg",
+#    timestamp: "11:37 PM December 31, 2019",
+#    number_likes: 13,
+#    comments: []
+#  }
+#]
+#
+#p posts
+#p posts[0]
 
 
 # The code snippet above shows an Array with 2 elements. Each element in the Array is a 
@@ -97,3 +106,29 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+emails = [
+  {
+    sender: "yourjob@work.com",
+    subject: "Need those TPS reports",
+    receiver: "ilyell@work.com",
+    body: "Where are those tps reports?",
+    attachments: "tpsreport.pdf"
+  },  
+  {
+    sender: "ilyell@work.com",
+    subject: "Repaint",
+    receiver: "autoshop@shop.com",
+    body: "Is my car done yet?",
+    attachments: nil
+  },  
+  {
+    sender: "yourjob@work.com",
+    subject: "TPS reports",
+    receiver: "ilyell@work.com",
+    body: "Here are the tps reports",
+    attachments: "tpsreport.pdf"
+  }
+]
+
+p emails
